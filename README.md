@@ -85,6 +85,12 @@ The project successfully analyzed the Airbnb dataset, revealing that **Location,
 
 ---
 
+## How to Use:
+* Open Airbnb_Open_Data.csv to review the original, uncleaned source data.
+*  Launch the airbnb_listings_analysis.ipynb Jupyter file to execute the complete data cleaning, EDA, visualization, and insight generation process.
+  
+---
+
 ## 📬 Contact
 
 **SWETHA E V**  
