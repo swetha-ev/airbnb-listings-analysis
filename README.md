@@ -8,7 +8,7 @@ This project presents an **end-to-end Exploratory Data Analysis (EDA)** of Airbn
 
 1.  **Data Preparation Mastery:** Demonstrate robust data cleaning and type correction (e.g., converting price strings to numeric).
 2.  **Comprehensive Exploratory Data Analysis (EDA):** Conduct univariate, bivariate, and multivariate analysis to uncover pricing and demand patterns.
-3.  **Visualization and Insight Generation:** Generate over **meaningful visualizations** (using Seaborn and Matplotlib) to support **key business insights and recommendations**.
+3.  **Visualization and Insight Generation:** Generate **meaningful visualizations** (using Seaborn and Matplotlib) to support **key business insights and recommendations**.
 4.  **Documentation and Presentation:** Maintain a well-structured and well-commented Jupyter Notebook for clear methodology and result interpretation.
 
 ---
@@ -41,7 +41,6 @@ The data was prepared for analysis through a series of robust cleaning and trans
 * **Column Standardization:** Columns were renamed to a single, standard naming convention for consistency.
 * **Feature Reduction (Dropping Columns):** Irrelevant or redundant columns (`id`, `host_id`, `license`, and `house_rules`) were dropped.
 * **Data Type Correction:** The `price` and `service_fee` columns were converted from string to a **numeric (Float) type**.
-* **Outlier Removal:** Outliers in the `price` column were removed using the **group-wise IQR method** calculated for each `room_type` separately.
 * **Missing Value Imputation:** Null values in `reviews_per_month` were imputed with `0`, and those in `last_review` were set to a standard date (`01/01/1900`) to enable datetime operations.
 
 ### 2. Key Visualizations & Techniques
@@ -49,8 +48,8 @@ The data was prepared for analysis through a series of robust cleaning and trans
 | Visualization Type | Insight Derived | Python Tool |
 | :--- | :--- | :--- |
 | **Geospatial Scatter Plot** | Identified clusters of high-priced listings, confirming **location as the primary price driver**. | GeoPandas, Contextily |
-| **Faceted Bar Plot** | Showed that **'Entire home/apt' listings require higher average minimum nights** across all geographic groups. | Seaborn (`catplot`) |
-| **Box Plots** | Compared the central tendency and spread of price distributions across room types after outlier removal. | Seaborn (`boxplot`) |
+| **Bar Plot** | Showed that **'Entire home/apt' listings require higher average minimum nights** across all geographic groups. | Seaborn (`barplot`) |
+| **Box Plots** | Compared the central tendency and spread of price distributions across room types. | Seaborn (`boxplot`) |
 | **Correlation Heatmap** | Determined statistical relationships between numerical features (`price`, `number_of_reviews`, etc.). | Seaborn (`heatmap`) |
 
 ---
@@ -83,3 +82,13 @@ The project successfully analyzed the Airbnb dataset, revealing that **Location,
 * **Data Manipulation:** Pandas, NumPy
 * **Visualization:** Matplotlib, Seaborn
 * **Geospatial Analysis:** **GeoPandas, Shapely, Contextily**
+
+---
+
+## 📬 Contact
+
+**SWETHA E V**  
+📧 swethaev14@hmail.com  
+🔗 [LinkedIn](https://in.linkedin.com/in/swethaev)
+
+---
